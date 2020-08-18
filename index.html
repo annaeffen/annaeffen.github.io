@@ -1,83 +1,72 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <style>
-    body {font-family: Arial;}
+<html lang="en">
+<head>
+  <title>Anna Effenberger</title>
+  <link rel="icon" href="letterA.png">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.css">
+  <link rel="stylesheet" href="https://cdn.rawgit.com/jpswalsh/academicons/master/css/academicons.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,900">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="styles.css">
+</head>
 
-    /* Style the tab */
-    .tab {
-      overflow: hidden;
-      border: 1px solid #ccc;
-      background-color: #f1f1f1;
-    }
-    /* Style the buttons inside the tab */
-    .tab button {
-      background-color: inherit;
-      float: left;
-      border: none;
-      outline: none;
-      cursor: pointer;
-      padding: 14px 16px;
-      transition: 0.3s;
-      font-size: 17px;
-    }
-    /* Change background color of buttons on hover */
-    .tab button:hover {
-      background-color: #ddd;
-    }
-    /* Style the tab content */
-    .tabcontent {
-      display: none;
-      padding: 6px 12px;
-      border: 1px solid #ccc;
-      border-top: none;
-    }
-    <title>Hello World</title>
-  </style>
-  </head>
-  <body>
-    <h1>Hello World</h1>
-    <h2>Tabs</h2>
-    <p>Click on the buttons inside the tabbed menu:</p>
+<body>
+<!-- Navbar -->
+<!--
+<nav class="navbar navbar-expand-sm">
+  <a class="navbar-brand" href="index.html">Anna Effenberger</a>
+  <ul class="navbar-nav">
+  <li class="nav-item">
+    <a class="nav-link" href="blog.html">Blog</a>
+  </li>
+</ul>
+</nav>
+-->
+<!-- Biography -->
+<div class="container-title">
+<div class="row" style="overflow: auto">
+  <div class="col-sm-4" style="text-align: right">
+    <h1>Biography</h1>
+    <img src="ae.jpg" alt="Anna Effenberger" style="width:50%; border:0px; float: right">
+  </div>
+  <div class="col-sm-8">
+    <p>I'm currently an undergraduate student at <a href="http://as.cornell.edu//">Cornell University</a>
+    studying Economics, Statistics, and Computer Science. </p>
 
-    <div class="tab">
-      <button class="tablinks" onclick="openTab(event, 'Tab1')">Tab1</button>
-      <button class="tablinks" onclick="openTab(event, 'Tab2')">Tab2</button>
+    <p>I've always been passionate about understanding and shaping the world by creatively applying quantitative methods to data,
+      whether that's studying patterns in natural language or uncovering trends in financial markets. </p>
+
+    <p>My projects so far include research studying collaborative language at Cornell Tech's <a href="http://lil.nlp.cornell.edu/cerealbar/">Language, Interaction, and Learning (LIL) Lab</a> under Professor Yoav Artzi and
+      quantifying biases in juror selection under Professor <a href="https://research.cornell.edu/researchers/martin-t-wells">Martin T. Wells</a>. </p>
+
+    <p>You can read about my work in CV form <a href="cv.pdf">here</a>.</p>
     </div>
+  </div>
+</div>
 
-    <div id="Tab1" class="tabcontent">
-      <h3>Tab1</h3>
-      <p>tab1 test.</p>
-
-      <form action = "action_page.php" target="_blank" method="get">
-        Name: <input type="text" name="name"><br>
-        E-mail: <input type="text" name="email"><br>
-        <input type="submit">
-      </form>
+<!-- Links -->
+<div class="container-title"Z>
+  <div class="row">
+    <div class="col-sm-4" style="text-align: right">
+      <h1>Links</h1>
     </div>
-
-    <div id="Tab2" class="tabcontent">
-      <h3>Tab2</h3>
-      <p>tab2 test.</p>
-
-
+    <div class="col-sm-8" style="padding-bottom:0px">
+      <a href="mailto:ae347@cornell.edu"><i class="fa fa-envelope-square fa-3x"></i></a>
+      <a href="https://linkedin.com/in/annaeffenberger"><i class="fab fa-linkedin fa-3x"></i></a>
+      <a href="https://annaeffenbergerart.weebly.com"><i class="fa fa-paint-brush fa-3x"></i></a>
     </div>
+  </div>
+</div>
 
-    <script>
-      function openTab(evt, tabName) {
-        var i, tabcontent, tablinks;
-        tabcontent = document.getElementsByClassName("tabcontent");
-        for (i = 0; i < tabcontent.length; i++) {
-          tabcontent[i].style.display = "none";
-        }
-        tablinks = document.getElementsByClassName("tablinks");
-        for (i = 0; i < tablinks.length; i++) {
-          tablinks[i].className = tablinks[i].className.replace(" active", "");
-        }
-        document.getElementById(tabName).style.display = "block";
-        evt.currentTarget.className += " active";
-      }
-      </script>
-  </body>
+<!-- Footer -->
+<div class="container-footer text-center">
+  <p>Copyright &copy; 2020 Anna Effenberger. All rights reserved. Built with Bootstrap 4.0.0., with help from Audrey Effenberger</p>
+</div>
+</body>
+</html>
+
 </html>
